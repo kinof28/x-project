@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Navbar from "./components/Navbar";
+
+const walletAddress = "0x7c1b2f618569789941b88680966333f3e8fedc61";
 
 function App() {
   return (
-    <div className="App">
+    <>
+      <Navbar wallet={walletAddress} />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Home page</h1>
       </header>
-    </div>
+    </>
   );
 }
 
