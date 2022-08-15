@@ -1,13 +1,17 @@
 import styled from "styled-components";
+import { FaLink } from "react-icons/fa";
 
 import LogoImage from "../assets/logo-s.png";
 
-const Container = styled.div`
+const Container = styled.header`
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-color: black;
   color: white;
   display: flex;
   justify-content: space-between;
-  padding: 1rem 3rem;
+  padding: 0.8rem 3rem;
   border-bottom: 1px solid grey;
 `;
 const Logo = styled.div`
@@ -33,10 +37,18 @@ const Wrapper = styled.div`
   }
 `;
 const Button = styled.a`
-  color: #00062a;
+  color: #00062a !important;
   background: linear-gradient(45deg, #ffc107, #c9a30e);
-  padding: 1rem !important;
+  padding: 0.375rem 0.75rem !important;
+  font-size: 0.9rem !important;
   border-radius: 10px;
+  line-height: 1.5;
+  margin-left: 3rem;
+  & svg {
+    /* padding-right: 1rem; */
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 `;
@@ -74,6 +86,7 @@ const Navbar = (props) => {
               "https://pancakeswap.finance/swap?outputCurrency=" + props.wallet
             }
           >
+            <FaLink />
             Buy Now
           </Button>
         </ul>
