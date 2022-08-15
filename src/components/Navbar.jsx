@@ -21,9 +21,25 @@ const Wrapper = styled.div`
     list-style: none;
     margin: 0;
     display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  & a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 1rem;
+    font-weight: bold;
+    font-size: 1.1rem;
   }
 `;
-const Button = styled.a``;
+const Button = styled.a`
+  color: #00062a;
+  background: linear-gradient(45deg, #ffc107, #c9a30e);
+  padding: 1rem !important;
+  border-radius: 10px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+`;
 
 const Navbar = (props) => {
   return (

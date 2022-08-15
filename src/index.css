@@ -3,6 +3,10 @@
   src: url(./assets/font/SpaceGrotesk[wght].ttf) format("truetype");
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
 
