@@ -1,4 +1,5 @@
 import "./App.css";
+import FloatingPrice from "./components/FloatingPrice";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
@@ -12,6 +13,7 @@ function App() {
       {/* <h1>Home page</h1> */}
       <Home />
       <Sidebar />
+      <FloatingPrice />
     </>
   );
 }
