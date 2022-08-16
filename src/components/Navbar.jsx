@@ -12,7 +12,7 @@ const Container = styled.header`
   display: flex;
   justify-content: space-between;
   padding: 0.8rem 3rem;
-  border-bottom: 1px solid grey;
+  border-bottom: 2px solid #ffffff2b;
 `;
 const Logo = styled.div`
   & img {

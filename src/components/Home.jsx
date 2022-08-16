@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 const Container = styled.div`
   margin-top: 4.97rem;
-  background-color: gray;
+  background: linear-gradient(135deg, #000000, #010416);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: white;
 `;
 
 const Home = () => {

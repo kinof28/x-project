@@ -4,12 +4,44 @@ import { IoLogoTwitter } from "react-icons/io";
 
 const Container = styled.div`
   position: fixed;
-  top: 20%;
-  margin-left: 2rem;
+  top: 25%;
+  margin-left: 0.8rem;
+  z-index: 1;
 `;
 const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  height: max-content;
   & p {
     display: none;
+    color: white;
+    font-size: 1.1rem;
+    border: 2px solid #ffffff2b;
+    border-radius: 10px;
+    padding: 0px 2rem;
+    line-height: 3rem;
+    margin-left: -1.2rem;
+    z-index: -1;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  &:hover p {
+    display: block;
+  }
+  & div {
+    border: 2px solid #ffffff2b;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    background-color: black;
+    color: #ffc107;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 `;
 
