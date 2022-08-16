@@ -11,7 +11,7 @@ function App() {
     <>
       <Navbar wallet={walletAddress} />
       {/* <h1>Home page</h1> */}
-      <Home />
+      <Home wallet={walletAddress} />
       <Sidebar />
       <FloatingPrice />
     </>
