@@ -7,13 +7,16 @@ import CoinsPrice from "./CoinsPrice";
 import Image3D from "../assets/3dlogo.png";
 
 const Container = styled.div`
-  margin-top: 4.97rem;
   background: linear-gradient(135deg, #000000, #010416);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
+  border-bottom: 2px solid #ffffff2b;
+`;
+const Margin = styled.div`
+  height: 4.97rem;
 `;
 
 const Wrapper = styled.div`
@@ -48,7 +51,7 @@ const Section = styled.div`
   & p {
     margin: 0;
     margin-bottom: 3rem;
-    margin-right: 0.8rem;
+    margin-right: 0.5rem;
     font-size: 1.2rem;
   }
 `;
@@ -122,9 +125,13 @@ const Swap = styled.button`
   }
 `;
 
+const CardWrapper = styled.div``;
+const Card = styled.div``;
+
 const Home = (props) => {
   return (
     <>
+      <Margin></Margin>
       <Container>
         <CoinsPrice />
         <Wrapper>
@@ -154,6 +161,46 @@ const Home = (props) => {
           </Section>
           <img src={Image3D} alt="XPROJECT" />
         </Wrapper>
+      </Container>
+      <Container>
+        <CardWrapper>
+          <Card>
+            <img src="" alt="" />
+            <h5>XPRO Price</h5>
+            <span>[BNB]</span>
+            <p>0.0000000000000947BNB</p>
+          </Card>
+          <Card>
+            <img src="" alt="" />
+            <h5>XPRO Price</h5>
+            <span>[BNB]</span>
+            <p>0.0000000000000947BNB</p>
+          </Card>
+          <Card>
+            <img src="" alt="" />
+            <h5>XPRO Price</h5>
+            <span>[BNB]</span>
+            <p>0.0000000000000947BNB</p>
+          </Card>
+          <Card>
+            <img src="" alt="" />
+            <h5>XPRO Price</h5>
+            <span>[BNB]</span>
+            <p>0.0000000000000947BNB</p>
+          </Card>
+          <Card>
+            <img src="" alt="" />
+            <h5>XPRO Price</h5>
+            <span>[BNB]</span>
+            <p>0.0000000000000947BNB</p>
+          </Card>
+          <Card>
+            <img src="" alt="" />
+            <h5>XPRO Price</h5>
+            <span>[BNB]</span>
+            <p>0.0000000000000947BNB</p>
+          </Card>
+        </CardWrapper>
       </Container>
     </>
   );

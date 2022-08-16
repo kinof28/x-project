@@ -45,7 +45,6 @@ const Button = styled.a`
   line-height: 1.5;
   margin-left: 3rem;
   & svg {
-    /* padding-right: 1rem; */
     margin-left: 10px;
     margin-right: 10px;
   }
